@@ -12,15 +12,15 @@
     <nav class="navbar">
         <div class="logo">BRAIN<span>SET.</span></div>
         <ul class="nav-links">
-            <li>Home</li>
-            <li>Sistemas</li>
-            <li>Dicas LPI</li>
-            <li>Contato</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sistemas">Sistemas</a></li>
+            <li><a href="#dicas">Dicas LPI</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
         <button class="btn-primary">Baixar Agora</button>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-content">
             <p class="tagline">TECNOLOGIA PARA SERIGRAFIA PRO</p>
             <h1>A melhor plataforma de <span>automação</span> para o seu futuro.</h1>
@@ -39,27 +39,29 @@
         </div>
 
         <div class="hero-image">
-            <div class="brain-illustration">
-                <!-- O Cérebro Rosa substitui os celulares aqui -->
+            <div class="brain-container">
                 <div class="glow-rosa"></div>
-                <img src="cerebro-rosa-ilustracao.png" alt="Brain OS Core">
+                <!-- CÉREBRO EM VETOR (SVG) PARA APARECER NA HORA -->
+                <svg class="brain-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ff007a" d="M440.5,190.2c-7.4-44.4-41.1-79.6-84.6-90.1c-13.6-35.8-48.1-61.1-88.9-61.1c-30.8,0-57.8,14.5-74.8,36.9 c-17-22.5-44-36.9-74.8-36.9c-40.8,0-75.3,25.3-88.9,61.1c-43.5,10.5-77.2,45.7-84.6,90.1c-4.8,28.8,1.6,57.7,17.7,80.1 c-4.9,13.6-7.6,28.2-7.6,43.4c0,66.8,50.1,122.1,114.9,130.4c13.7,35,47.8,59.9,87.7,59.9c16.1,0,31.2-4.1,44.4-11.2 c13.2,7.1,28.3,11.2,44.4,11.2c39.9,0,74-24.8,87.7-59.9c64.8-8.3,114.9-63.6,114.9-130.4c0-15.2-2.7-29.8-7.6-43.4 C438.9,247.9,445.3,219,440.5,190.2z M256,423.1c-11.3,0-20.5-9.2-20.5-20.5s9.2-20.5,20.5-20.5s20.5,9.2,20.5,20.5 S267.3,423.1,256,423.1z"/>
+                </svg>
             </div>
         </div>
     </header>
 
-    <section class="features">
+    <section class="features" id="sistemas">
         <div class="card">
             <span class="num">01.</span>
             <h3>Alta Definição</h3>
             <p>Algoritmos exclusivos para retículas perfeitas de 35 a 55 LPI.</p>
         </div>
-        <div class="card active">
+        <div class="card active" id="dicas">
             <span class="num">02.</span>
             <h3>Melhores Práticas</h3>
             <p>Dicas fundadas nas bases reais do Silk para evitar ganho de ponto.</p>
             <a href="#">Saiba Mais &rarr;</a>
         </div>
-        <div class="card">
+        <div class="card" id="contato">
             <span class="num">03.</span>
             <h3>Proteção Técnica</h3>
             <p>Avisos inteligentes que evitam erros de gravação e moiré.</p>
